@@ -1,0 +1,11 @@
+1. Open visual studio 2010
+2.select new project and console application.
+3.property manager ->debug->right click->add new properties->give name(suppose vinod_debug)
+4.vinod_debug->right click->properties
+
+c/c++->general->additional include directories->   $(OPEN_NI_INCLUDE)
+linker->general-> additional libraries  directories-> $(OPEN_NI_LIB64)
+linker ->input->additional dependencies-> OpenNI64.lib
+
+same with Release 
+ Restart the system 
