@@ -1,0 +1,554 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Made with Remarkable!
+  </title>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/github.min.css" rel="stylesheet"/>
+  <style type="text/css">
+   body{font:16px Helvetica,Arial,sans-serif;line-height:1.4;color:#333;word-wrap:break-word;background-color:#fff;padding:10px 15px}strong{font-weight:700}h1{font-size:2em;margin:.67em 0;text-align:center}h2{font-size:1.75em}h3{font-size:1.5em}h4{font-size:1.25em}h1,h2,h3,h4,h5,h6{font-weight:700;position:relative;margin-top:15px;margin-bottom:15px;line-height:1.1}h1,h2{border-bottom:1px solid #eee}hr{height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #ddd}a{color:#4183C4}a.absent{color:#c00}ol,ul{padding-left:15px;margin-left:5px}ol{list-style-type:lower-roman}table{padding:0}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0}table tr:nth-child(2n){background-color:#aaa}table tr th{font-weight:700;border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td :first-child,table tr th :first-child{margin-top:0}table tr td:last-child,table tr th :last-child{margin-bottom:0}img{max-width:100%}code{padding:0 5px;background-color:#d3d3d3}blockquote{padding: 0 15px;border-left:4px solid #ccc}
+  </style>
+ </head>
+ <body>
+  <table>
+   <thead>
+    <tr>
+     <th align="left">
+      Paper
+     </th>
+     <th align="left">
+      Year
+     </th>
+     <th align="center">
+      MNIST–&gt; USPS
+     </th>
+     <th align="right">
+      USPS–&gt;MNIST
+     </th>
+     <th align="right">
+      MNIST–&gt; SVHN
+     </th>
+     <th align="right">
+      SVHN–&gt; MNIST
+     </th>
+     <th>
+      Amazon–&gt;Webcam
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td align="left">
+      <a href="https://arxiv.org/pdf/1412.3474.pdf">
+       MMD
+      </a>
+     </td>
+     <td align="left">
+      Dec 2014
+     </td>
+     <td align="center">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td>
+      59.4 ± 0.8%
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="http://sites.skoltech.ru/compvision/projects/grl/files/paper.pdf">
+       GRL
+      </a>
+     </td>
+     <td align="left">
+      Feb 2015(ICML 15)
+     </td>
+     <td align="center">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      73.85 %
+     </td>
+     <td>
+      73%
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="https://people.eecs.berkeley.edu/~jordan/papers/long-etal-icml2015.pdf">
+       DAN
+      </a>
+     </td>
+     <td align="left">
+      May 2015 (ICML 15)
+     </td>
+     <td align="center">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td>
+      68.5 ± 0.4%
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="https://papers.nips.cc/paper/6360-learning-transferrable-representations-for-unsupervised-domain-adaptation.pdf">
+       Transferrable Representations
+      </a>
+     </td>
+     <td align="left">
+      May 2016 (NIPS 16)
+     </td>
+     <td align="center">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      40.3%
+     </td>
+     <td align="right">
+      78.8%
+     </td>
+     <td>
+      81.1%
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="https://arxiv.org/pdf/1607.01719.pdf">
+       DeepCoral
+      </a>
+     </td>
+     <td align="left">
+      July 2016(ECCV 2016 Workshp)
+     </td>
+     <td align="center">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td>
+      66.4±0.4%
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="https://arxiv.org/pdf/1607.03516.pdf">
+       DRCN
+      </a>
+     </td>
+     <td align="left">
+      Aug 2016(ECCV 2016)
+     </td>
+     <td align="center">
+      91.80 ± 0.09%
+     </td>
+     <td align="right">
+      73.67 ± 0.04%
+     </td>
+     <td align="right">
+      40.05 ± 0.07%
+     </td>
+     <td align="right">
+      81.97 ± 0.16%
+     </td>
+     <td>
+      68.7 ± 0.3%
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="https://arxiv.org/pdf/1608.06019.pdf">
+       DSN
+      </a>
+     </td>
+     <td align="left">
+      Aug 2016(NIPS 2016)
+     </td>
+     <td align="center">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      82.7%(with GRL)
+     </td>
+     <td>
+      -
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="http://www.icst.pku.edu.cn/course/icb/Pub%20Files/2017/lyh_iclrw17.pdf">
+       AdaBN
+      </a>
+     </td>
+     <td align="left">
+      Nov2016(ICLR 17 workshop)
+     </td>
+     <td align="center">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td>
+      75.4%(with coral)
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="https://arxiv.org/pdf/1603.06432.pdf">
+       Behond WeightShare
+      </a>
+     </td>
+     <td align="left">
+      Nov 2016
+     </td>
+     <td align="center">
+      60.7%
+     </td>
+     <td align="right">
+      67.3%
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td>
+      76%(with GRL)
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="https://arxiv.org/pdf/1602.04433.pdf">
+       RTN
+      </a>
+     </td>
+     <td align="left">
+      Feb 2017(NIPS 16)
+     </td>
+     <td align="center">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td>
+      73.3±0.3%(MMD+residual+entropy)
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Yan_Mind_the_Class_CVPR_2017_paper.pdf">
+       WDAN
+      </a>
+     </td>
+     <td align="left">
+      May 2017 (CVPR 17)
+     </td>
+     <td align="center">
+      72.3±0.4%(LeNet)
+     </td>
+     <td align="right">
+      65.5±0.5%(LeNet)
+     </td>
+     <td align="right">
+      23.5±0.3%(LeNet)
+     </td>
+     <td align="right">
+      67.3±0.5%(LeNet)
+     </td>
+     <td>
+      66.9±0.2
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Venkateswara_Deep_Hashing_Network_CVPR_2017_paper.pdf">
+       DeepHASH
+      </a>
+     </td>
+     <td align="left">
+      June 2017(CVPR 17)
+     </td>
+     <td align="center">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td>
+      68.30%
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="https://arxiv.org/pdf/1702.08811.pdf">
+       CMD
+      </a>
+     </td>
+     <td align="left">
+      July 2017(ICLR 17)
+     </td>
+     <td align="center">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td>
+      77.0 ± 0.6%(VGG16)
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="https://arxiv.org/pdf/1605.06636.pdf">
+       JAN
+      </a>
+     </td>
+     <td align="left">
+      Aug 2017(ICML 2017)
+     </td>
+     <td align="center">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td>
+      75.2±0.4%
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="https://arxiv.org/pdf/1702.05464.pdf">
+       ADDA
+      </a>
+     </td>
+     <td align="left">
+      Aug 2017 (CVPR 2017)
+     </td>
+     <td align="center">
+      89.4 ± 0.2%
+     </td>
+     <td align="right">
+      90.1 ± 0.8%
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      76.0 ± 1.8%
+     </td>
+     <td>
+      -
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Bousmalis_Unsupervised_Pixel-Level_Domain_CVPR_2017_paper.pdf">
+       PixelDA
+      </a>
+     </td>
+     <td align="left">
+      Aug 2017 (CVPR 2017)
+     </td>
+     <td align="center">
+      95.9%
+     </td>
+     <td align="right">
+      —
+     </td>
+     <td align="right">
+      –
+     </td>
+     <td align="right">
+      –
+     </td>
+     <td>
+      –
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="https://arxiv.org/pdf/1711.03213.pdf">
+       CYCADA
+      </a>
+     </td>
+     <td align="left">
+      Oct 2017(ICLR 2017)
+     </td>
+     <td align="center">
+      94.8 ± 0.2%
+     </td>
+     <td align="right">
+      95.7 ± 0.2%
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      88.3 ± 0.2%
+     </td>
+     <td>
+      -
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="https://openreview.net/pdf?id=HJIoJWZCZ">
+       ADVERSARIAL DROPOUT
+      </a>
+     </td>
+     <td align="left">
+      Nov 2017(ICLR 2017)
+     </td>
+     <td align="center">
+      92.6±2.03(96.5±0.45)%
+     </td>
+     <td align="right">
+      94.1±0.0121%
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      94.1±1.37%
+     </td>
+     <td>
+      -
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="https://arxiv.org/pdf/1704.08082.pdf">
+       AutoDIAL
+      </a>
+     </td>
+     <td align="left">
+      Nov 2017(ICCV 2017)
+     </td>
+     <td align="center">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      –
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td>
+      73.6%
+     </td>
+    </tr>
+    <tr>
+     <td align="left">
+      <a href="http://ise.thss.tsinghua.edu.cn/~mlong/doc/multi-adversarial-domain-adaptation-aaai18.pdf">
+       MADA
+      </a>
+     </td>
+     <td align="left">
+      AAAI2018
+     </td>
+     <td align="center">
+      -
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td align="right">
+      –
+     </td>
+     <td align="right">
+      -
+     </td>
+     <td>
+      78.5±0.2%
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   MathJax.Hub.Config({"showProcessingMessages" : false,"messageStyle" : "none","tex2jax": { inlineMath: [ [ "$", "$" ] ] }});
+  </script>
+ </body>
+</html>
